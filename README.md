@@ -1,4 +1,7 @@
-# gvxr-tutorials
+![gVXR](img/gvxr_logo.png)
+
+# Tutorials
+
 Series of tutorials to show how to use gVXR
 
 1. [Installation-and-test.ipynb](Installation-and-test.ipynb)
@@ -11,4 +14,4 @@ Series of tutorials to show how to use gVXR
 
     [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test")
 
-    <!-- - [Run on Google Collaborate]() -->
+    - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Installation-and-test.ipynb)
