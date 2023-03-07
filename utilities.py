@@ -169,7 +169,7 @@ def recon_parallel(projections:np.ndarray, pixel_size:float, final_angle:float) 
 
     return result
 
-def recon_cone(projections:np.ndarray, pixel_size:float, final_angle:float, detector_pos:np.ndarray|list|tuple, source_pos:np.ndarray|list|tuple) -> Optional[np.ndarray]:
+def recon_cone(projections:np.ndarray, pixel_size:float, final_angle:float, detector_pos, source_pos) -> Optional[np.ndarray]:
     """Reconstruct a cone-beam CT scan using FDK.
 
     Args:
