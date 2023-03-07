@@ -1,0 +1,80 @@
+{
+    "WindowSize": [800, 450],
+
+    "Source": {
+        "Position": [0, -10, 0, "cm"],
+        "Shape": "Parallel",
+        "Beam": [
+            {
+                "Energy": 80,
+                "Unit": "keV",
+                "PhotonCount": 1000
+            }
+        ]
+    },
+
+    "Detector": {
+        "Position": [0, 10, 0, "cm"],
+        "UpVector": [0, 0, -1],
+        "NumberOfPixels": [300, 320],
+        "Spacing": [0.3, 0.3, "mm"]
+    },
+
+    "Samples": [
+        {
+            "Label": "sphere0",
+            "Path": "input_data/phantoms/spheres/spheres-0.stl",
+            "Unit": "mm",
+            "Material": ["Element", "W"],
+            "Density": 19.25,
+            "Transform": [
+                ["Rotation", 90, 1, 0, 0]
+            ]
+        },
+        {
+            "Label": "sphere1",
+            "Path": "input_data/phantoms/spheres/spheres-1.stl",
+            "Unit": "mm",
+            "Material": ["Element", "Ti"],
+            "Density": 4.5,
+            "Transform": [
+                ["Rotation", 90, 1, 0, 0]
+            ]
+        },
+        {
+            "Label": "sphere2",
+            "Path": "input_data/phantoms/spheres/spheres-2.stl",
+            "Unit": "mm",
+            "Material": ["Element", "C"],
+            "Density": 2.1,
+            "Transform": [
+                ["Rotation", 90, 1, 0, 0]
+            ]
+        },
+        {
+            "Label": "sphere3",
+            "Path": "input_data/phantoms/spheres/spheres-3.stl",
+            "Unit": "mm",
+            "Material": ["Element", "C"],
+            "Density": 8.96,
+            "Transform": [
+                ["Rotation", 90, 1, 0, 0]
+            ]
+        },
+        {
+            "Label": "sphere4",
+            "Path": "input_data/phantoms/spheres/spheres-4.stl",
+            "Unit": "mm",
+            "Material": ["Element", "Al"],
+            "Density": 2.7,
+            "Transform": [
+                ["Rotation", 90, 1, 0, 0]
+            ]
+        }
+    ],
+    "Scan": {
+        "NumberOfProjections":360,
+        "FinalAngle": 180,
+        "CenterOfRotation": [0,0,0]
+    }
+}
