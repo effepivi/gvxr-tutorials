@@ -11,7 +11,8 @@ has_cil = True
 try:
     from cil.framework import AcquisitionData, AcquisitionGeometry, ImageData
     from cil.processors import TransmissionAbsorptionConverter
-    from cil.recon import FBP, FDK
+    # from cil.recon import FBP, FDK
+    from cil.plugins.astra.processors import FBP, FDK
     from cil.utilities.display import show_geometry
 except:
     has_cil = False
