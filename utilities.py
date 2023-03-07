@@ -3,19 +3,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 #from tabletext import to_text
-import xraylib as xrl
+#import xraylib as xrl
 from xpecgen import xpecgen as xg
 import ipywidgets as widgets
 
-# has_cil = True
-# try:
-#     from cil.framework import AcquisitionData, AcquisitionGeometry, ImageData
-#     from cil.processors import TransmissionAbsorptionConverter
-#     from cil.recon import FBP, FDK
-#     from cil.utilities.display import show_geometry
-# except:
-#     has_cil = False
+has_cil = True
+try:
+    from cil.framework import AcquisitionData, AcquisitionGeometry, ImageData
+    from cil.processors import TransmissionAbsorptionConverter
+    from cil.recon import FBP, FDK
+    from cil.utilities.display import show_geometry
+except:
+    has_cil = False
 
+"""
 def GetDensity(material):
     if material=='H2C':
         cpH2C = xrl.GetCompoundDataNISTByName('Polyethylene')
@@ -129,7 +130,7 @@ def spectrum(E0,Mat_Z,Mat_X):
     plt.show()
 
     mpl.rcParams['font.size'] = old_font_size
-
+"""
 
 def recon_parallel(projections:np.ndarray, pixel_size:float, final_angle:float) -> Optional[np.ndarray]:
     """Reconstruct a parallel CT scan using FBP.
