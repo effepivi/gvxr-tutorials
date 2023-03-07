@@ -35,3 +35,21 @@ Series of tutorials to show how to use gVXR
 
     <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
     - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Multi_material_sample.ipynb)
+4.  [Source_parameters.ipynb](Source_parameters.ipynb)
+    - Content
+        1. Create X-ray sources of different shapes:
+            1. Parallel beam (e.g. synchrotron);
+            2. Cone-beam (e.g. X-ray tube);
+                1. Ideal case, i.e. infinitesimal point source;
+                2. Focal spot, i.e. more realistic.
+        2. Visualise the source shape;
+        3. Set the beam spectrum:
+            1. Monochromatic;
+            2. Polychromatic:
+                1. By hand;
+                2. Using a text file;
+                3. Using xpecgen (a python package to calculate x-ray spectra generated in tungsten anodes using the model of Med. Phys. 43, 4655.).
+    <!-- - [Watch the video](https://youtu.be/kZPNA4qha2s) -->
+
+    <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
+    - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Source_parameters.ipynb)
