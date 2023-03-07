@@ -24,7 +24,7 @@ Series of tutorials to show how to use gVXR
 
     <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
     - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/First_xray_simulation.ipynb)
-3.  [Multi_material_sample.ipynb](Multi_material_sample.ipynb)
+3. [Multi_material_sample.ipynb](Multi_material_sample.ipynb)
     - Content
         1. Create X-ray simulations of samples involving multiple materials
             1. Multiple individual materials (e.g. a Copper pipe inside an Aluminium block)
@@ -35,7 +35,7 @@ Series of tutorials to show how to use gVXR
 
     <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
     - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Multi_material_sample.ipynb)
-4.  [Source_parameters.ipynb](Source_parameters.ipynb)
+4. [Source_parameters.ipynb](Source_parameters.ipynb)
     - Content
         1. Create X-ray sources of different shapes:
             1. Parallel beam (e.g. synchrotron);
@@ -53,3 +53,22 @@ Series of tutorials to show how to use gVXR
 
     <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
     - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Source_parameters.ipynb)
+5. [Detector_parameters.ipynb](Detector_parameters.ipynb)
+    - Content
+        1. Introduction to more advanced detector properties
+        2. Learn the effect of magnification on tube-based scanners
+        3. See how the detector's Line Spread Function dramatically change result quality (pixels are not everything!)
+    <!-- - [Watch the video](https://youtu.be/kZPNA4qha2s) -->
+
+    <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
+    - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Detector_parameters.ipynb)
+5. [CT_acquisition.ipynb](CT_acquisition.ipynb)
+    - Content
+        1. Learn how to perform a simulated CT Acquisition
+        2. Use reconstructed data to see how simulation parameters affect quality
+        3. Discover the effects of polychromatic beams on results
+        4. Compare simulated samples to real data   
+     <!-- - [Watch the video](https://youtu.be/kZPNA4qha2s) -->
+
+    <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
+    - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/CT_acquisition.ipynb)
