@@ -13,7 +13,6 @@ Series of tutorials to show how to use gVXR
     - [Watch the video](https://youtu.be/kZPNA4qha2s)
 
     [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test")
-
     - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Installation-and-test.ipynb)
 2. [First_xray_simulation.ipynb](First_xray_simulation.ipynb)
     - Content
@@ -24,5 +23,15 @@ Series of tutorials to show how to use gVXR
     <!-- - [Watch the video](https://youtu.be/kZPNA4qha2s) -->
 
     <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
-
     - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/First_xray_simulation.ipynb)
+3.  [Multi_material_sample.ipynb](Multi_material_sample.ipynb)
+    - Content
+        1. Create X-ray simulations of samples involving multiple materials
+            1. Multiple individual materials (e.g. a Copper pipe inside an Aluminium block)
+            2. Metal Alloys and Mixtures
+            3. Chemical Compounds
+        2. Visualise the effects of different materials on the resulting X-ray images
+    <!-- - [Watch the video](https://youtu.be/kZPNA4qha2s) -->
+
+    <!-- [![Watch the recording](https://img.youtube.com/vi/kZPNA4qha2s/0.jpg)](https://youtu.be/kZPNA4qha2s "gVirtualXray (gVXR) Installation and test") -->
+    - [Run on Google Collaborate](https://colab.research.google.com/github/effepivi/gvxr-tutorials/blob/main/Multi_material_sample.ipynb)
