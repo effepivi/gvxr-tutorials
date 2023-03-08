@@ -14,8 +14,15 @@ try:
     from cil.recon import FBP, FDK
     #from cil.plugins.astra.processors import FBP
     from cil.utilities.display import show_geometry
+    from cil.plugins.astra.processors.FDK_Flexible import FDK_Flexible
 except:
     has_cil = False
+
+has_tigre = True
+try:
+    import tigre
+except:
+    has_tigre = False
 
 """
 def GetDensity(material):
@@ -160,7 +167,11 @@ def recon_parallel(projections:np.ndarray, pixel_size:float, final_angle:float) 
         acData = TransmissionAbsorptionConverter(min_intensity=0.0001)(acData)
 
         print("Running FBP Reconstruction")
-        result:ImageData|None = FBP(acData, geo.get_ImageGeometry()).run()
+        if has_tigre:
+            result:ImageData | None = FBP(acData, geo.get_ImageGeometry()).run()
+        else:
+            acData.reorder("astra")
+            result:ImageData | None = FBP(acData, geo.get_ImageGeometry(),backend="astra").run()
 
         show_geometry(acData.geometry)
         plt.show()
@@ -183,6 +194,7 @@ def recon_cone(projections:np.ndarray, pixel_size:float, final_angle:float, dete
     result = None
 
     print(f"Has CIL: {'YES' if has_cil else 'NO'}")
+    print(f"Using {'TIGRE' if has_tigre else 'ASTRA'}")
     if has_cil:
         geo:AcquisitionGeometry = AcquisitionGeometry.create_Cone3D(source_pos, detector_pos)
 
@@ -196,7 +208,13 @@ def recon_cone(projections:np.ndarray, pixel_size:float, final_angle:float, dete
         acData = TransmissionAbsorptionConverter(min_intensity=0.0001)(acData)
 
         print("Running FBP Reconstruction")
-        result:ImageData|None = FDK(acData, geo.get_ImageGeometry()).run()
+        if has_tigre:
+            result:ImageData | None = FDK(acData, geo.get_ImageGeometry()).run()
+        else:
+            acData.reorder("astra")
+            fbk = FDK_Flexible(geo.get_ImageGeometry(), acData.geometry)
+            fbk.set_input(acData)
+            result:ImageData | None = fbk.get_output()
 
         show_geometry(acData.geometry)
         plt.show()
