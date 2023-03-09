@@ -1,0 +1,49 @@
+name: gvxr-tutorial
+channels:
+    - conda-forge
+    - intel
+    - astra-toolbox
+    - ccpi
+dependencies:
+    - python=3.10
+    - ipython
+    - ipykernel
+    #- npm
+    - nodejs
+    - ipympl
+    - traittypes=0.2.1
+    - numpy=1.21
+    - pandas
+    - libtiff
+    - vtk
+    - jupyterlab>=3
+    - ipywidgets>=7.6
+#    - cma
+#    - tomopy
+#- scikit-learn
+    - scikit-image
+      #- scipy
+#    - imageio
+    - SimpleITK
+      #- numpy-stl
+    - gputil
+    - python-kaleido
+      #- plotly
+    - matplotlib
+    - py-cpuinfo
+    #- unlzw3
+    - cil=22.2.0
+    - tigre=2.2
+    - astra-toolbox
+    - pip
+    - pip:
+#        - viewscad
+        - xpecgen
+        - git+https://bitbucket.org/spekpy/spekpy_release.git
+          #- pymoo==0.5.0
+#        - chart_studio
+        - gvxr
+          #- opencv-python
+          #- unlzw3
+        - npm
+        - git+https://github.com/K3D-tools/K3D-jupyter
