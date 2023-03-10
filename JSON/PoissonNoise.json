@@ -2,9 +2,9 @@
     "WindowSize": [500, 500],
 
     "Detector": {
-        "Position": [0.0, 20.0, 0.0, "cm"],        
+        "Position": [20.0, 0.0, 0.0, "cm"],        
         "UpVector": [0, 0, -1],
-        "NumberOfPixels": [800, 800],
+        "NumberOfPixels": [400, 400],
         "Spacing": [0.8, 0.8, "mm"],
         "Energy response": {
             "File": "../energyResponseDetector.txt",
@@ -13,19 +13,19 @@
     },
 
     "Source": {
-        "Position": [0.0, -60.0, 0.0, "cm"],
+        "Position": [-60.0, 0.0, 0.0, "cm"],
         "Shape": "PointSource",
         "Beam": {
-            "kvp": 50,
+            "kvp": 110,
             "tube angle": 12,
             "filter": [
-                ["Al", 0.5]
+                ["Cu", 0.5]
             ]
         }
     },
 
     "Scan": {
-        "NumberOfProjections": 191,
+        "NumberOfProjections": 360,
         "FinalAngle": 180,
         "IncludeFinalAngle": true,
         "CenterOfRotation": [0,0,0],
@@ -37,121 +37,10 @@
 
         {
             "Label": "internals",
-            "Path": "../input_data/TurboPump/internals.stl",
+            "Path": "../input_data/welsh-dragon-small.stl",
             "Unit": "mm",
-            "Material": ["Mixture", [
-                    1, 0.102,
-                    6, 0.143,
-                    7, 0.034,
-                    8, 0.710,
-                    11, 0.001,
-                    15, 0.002,
-                    16, 0.003,
-                    17, 0.001,
-                    19, 0.004
-                ]
-            ],
-            "Density": 1.050,
-            "Type" : "inner"
-        },
-
-        {
-            "Label": "coupler",
-            "Path": "../input_data/TurboPump/coupler.stl",
-            "Unit": "mm",
-            "Material": ["Mixture", [
-                    1, 0.102,
-                    6, 0.143,
-                    7, 0.034,
-                    8, 0.710,
-                    11, 0.001,
-                    15, 0.002,
-                    16, 0.003,
-                    17, 0.001,
-                    19, 0.004
-                ]
-            ],
-            "Density": 1.050,
-            "Type" : "inner"
-        },
-
-        {
-            "Label": "front_flange",
-            "Path": "../input_data/TurboPump/front_flange.stl",
-            "Unit": "mm",
-            "Material": ["Mixture", [
-                    1, 0.102,
-                    6, 0.143,
-                    7, 0.034,
-                    8, 0.710,
-                    11, 0.001,
-                    15, 0.002,
-                    16, 0.003,
-                    17, 0.001,
-                    19, 0.004
-                ]
-            ],
-            "Density": 1.050,
-            "Type" : "inner"
-        },
-
-        {
-            "Label": "rear_flange",
-            "Path": "../input_data/TurboPump/rear_flange.stl",
-            "Unit": "mm",
-            "Material": ["Mixture", [
-                    1, 0.102,
-                    6, 0.143,
-                    7, 0.034,
-                    8, 0.710,
-                    11, 0.001,
-                    15, 0.002,
-                    16, 0.003,
-                    17, 0.001,
-                    19, 0.004
-                ]
-            ],
-            "Density": 1.050,
-            "Type" : "inner"
-        },
-
-        {
-            "Label": "housing",
-            "Path": "../input_data/TurboPump/housing.stl",
-            "Unit": "mm",
-            "Material": ["Mixture", [
-                    1, 0.102,
-                    6, 0.143,
-                    7, 0.034,
-                    8, 0.710,
-                    11, 0.001,
-                    15, 0.002,
-                    16, 0.003,
-                    17, 0.001,
-                    19, 0.004
-                ]
-            ],
-            "Density": 1.050,
-            "Type" : "inner"
-        },
-
-        {
-            "Label": "roller_bearing",
-            "Path": "../input_data/TurboPump/ThrustRollerBearing.stl",
-            "Unit": "mm",
-            "Material": ["Mixture", [
-                    1, 0.102,
-                    6, 0.143,
-                    7, 0.034,
-                    8, 0.710,
-                    11, 0.001,
-                    15, 0.002,
-                    16, 0.003,
-                    17, 0.001,
-                    19, 0.004
-                ]
-            ],
-            "Density": 1.050,
+            "Material": ["Compound", "SiO2"],
+            "Density": 2.65,
             "Type" : "inner"
         }
     ]
