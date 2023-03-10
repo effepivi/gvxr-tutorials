@@ -1,4 +1,4 @@
-name: gvxr-tutorial
+name: gvxr-tutorials
 channels:
     - conda-forge
     - intel
