@@ -39,7 +39,7 @@ dependencies:
     - pip:
 #        - viewscad
         - xpecgen
-        - git+https://bitbucket.org/spekpy/spekpy_release.git
+        #- git+https://bitbucket.org/spekpy/spekpy_release.git
           #- pymoo==0.5.0
 #        - chart_studio
         - gvxr
