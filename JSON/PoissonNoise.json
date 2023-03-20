@@ -4,8 +4,8 @@
     "Detector": {
         "Position": [20.0, 0.0, 0.0, "cm"],        
         "UpVector": [0, 0, -1],
-        "NumberOfPixels": [400, 400],
-        "Spacing": [0.8, 0.8, "mm"],
+        "NumberOfPixels": [200, 200],
+        "Spacing": [1.6, 1.6, "mm"],
         "Energy response": {
             "File": "../energyResponseDetector.txt",
             "Energy": "MeV"
