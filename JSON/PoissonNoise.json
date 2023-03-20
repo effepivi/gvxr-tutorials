@@ -25,8 +25,8 @@
     },
 
     "Scan": {
-        "NumberOfProjections": 360,
-        "FinalAngle": 180,
+        "NumberOfProjections": 361,
+        "FinalAngle": 360,
         "IncludeFinalAngle": true,
         "CenterOfRotation": [0,0,0],
         "OutFolder": "../PoissonNoise/raw_projections"
