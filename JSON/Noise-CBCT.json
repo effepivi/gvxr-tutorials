@@ -4,7 +4,7 @@
     "Detector": {
         "Position": [0.0, -150.0, 0.0, "mm"],        
         "UpVector": [0, 0, -1],
-        "NumberOfPixels": [128, 128],
+        "NumberOfPixels": [512, 512],
         "Size": [500, 500, "mm"],
         "Energy response": {
             "File": "../energyResponseDetector.txt",
@@ -26,7 +26,7 @@
         "FinalAngle": 360,
         "GifPath": "visualisation.gif",
         "IncludeFinalAngle": true,
-        "NumberOfProjections": 90,
+        "NumberOfProjections": 600,
         "OutFolder": "../Noise-CBCT/raw_projections"
     },
 
