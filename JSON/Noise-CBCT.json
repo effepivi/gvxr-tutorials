@@ -27,7 +27,7 @@
         "GifPath": "visualisation.gif",
         "IncludeFinalAngle": true,
         "NumberOfProjections": 90,
-        "OutFolder": "raw_projections"
+        "OutFolder": "../Noise-CBCT/raw_projections"
     },
 
     "Samples": [
