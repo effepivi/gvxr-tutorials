@@ -1,5 +1,46 @@
 #! /usr/bin/env python
 
+
+import SimpleITK as sitk
+import vtk
+from vtk.util import numpy_support
+
+
+# A function to extract an isosurface from a binary image
+def extractSurface(vtk_image, isovalue):
+
+    iso = vtk.vtkContourFilter()
+    if vtk.vtkVersion.GetVTKMajorVersion() >= 6:
+        iso.SetInputData(vtk_image)
+    else:
+        iso.SetInput(vtk_image)
+
+    iso.SetValue(0, isovalue)
+    iso.Update()
+    return iso.GetOutput()
+
+# A function to write STL files
+def writeSTL(mesh, name):
+    """Write an STL mesh file."""
+    try:
+        writer = vtk.vtkSTLWriter()
+        if vtk.vtkVersion.GetVTKMajorVersion() >= 6:
+            writer.SetInputData(mesh)
+        else:
+            writer.SetInput(mesh)
+        writer.SetFileTypeToBinary()
+        writer.SetFileName(name)
+        writer.Write()
+        writer = None
+    except BaseException:
+        print("STL mesh writer failed")
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        traceback.print_exception(
+            exc_type, exc_value, exc_traceback, limit=2, file=sys.stdout)
+    return None
+
+
+
 """
 Function to convert a SimpleITK image to a VTK image.
 
@@ -8,12 +49,6 @@ and Infectious Diseases, dchen@mail.nih.gov.
 It is covered by the Apache License, Version 2.0:
 http://www.apache.org/licenses/LICENSE-2.0
 """
-
-import SimpleITK as sitk
-import vtk
-from vtk.util import numpy_support
-
-
 def sitk2vtk(img, debugOn=False, centre=False):
     """Convert a SimpleITK image to a VTK image, via numpy."""
 
