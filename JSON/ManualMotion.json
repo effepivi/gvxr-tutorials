@@ -1,0 +1,49 @@
+{
+    "WindowSize": [1000, 500],
+
+    "Detector": {
+        "Position": [20.0, 0.0, 0.0, "cm"],        
+        "UpVector": [0, 0, -1],
+        "NumberOfPixels": [800, 800],
+        "Spacing": [0.4, 0.4, "mm"],
+        "Energy response": {
+            "File": "../energyResponseDetector.txt",
+            "Energy": "MeV"
+        }
+    },
+
+    "Source": {
+        "Position": [-60.0, 0.0, 0.0, "cm"],
+        "Shape": "PointSource",
+        "Beam": {
+            "kvp": 110,
+            "tube angle": 12,
+            "filter": [
+                ["Cu", 0.5]
+            ]
+        }
+    },
+
+    "Samples": [
+               
+        {
+            "Label": "dragon",
+            "Path": "../input_data/welsh-dragon-small.stl",
+            "Unit": "mm",
+            "Material": ["Compound", "SiO2"],
+            "Density": 2.65,
+            "Type" : "outer",
+            "Transform": [["Translation", 10.479138374328613, 671.8119506835938, -298.1263885498047, "mm"]],
+            "Colour": [1, 0, 0, 0.5]
+        },
+        
+        {
+            "Label": "insert",
+            "Cube": [10, "mm"],
+            "Material": ["Compound", "H2O"],
+            "Density": 1,
+            "Type" : "inner",
+            "Transform": [["Translation", 0, -20, 0, "mm"]]
+        }        
+    ]
+}
