@@ -1,7 +1,6 @@
 name: gvxr-tutorials
 channels:
     - conda-forge
-    - intel
     - astra-toolbox
     - ccpi
 dependencies:
@@ -35,6 +34,7 @@ dependencies:
     - cil=22.2.0
     - tigre=2.2
     - astra-toolbox
+    - k3d
     - pip
     - pip:
 #        - viewscad
@@ -46,4 +46,3 @@ dependencies:
           #- opencv-python
           #- unlzw3
         - npm
-        - git+https://github.com/K3D-tools/K3D-jupyter
