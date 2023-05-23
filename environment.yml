@@ -1,6 +1,7 @@
 name: gvxr-tutorials
 channels:
     - conda-forge
+    - intel
     - astra-toolbox
     - ccpi
 dependencies:
