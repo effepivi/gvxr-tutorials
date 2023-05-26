@@ -5,7 +5,7 @@ channels:
     - astra-toolbox
     - ccpi
 dependencies:
-    - python=3.11
+    - python=3.10
     # - ipython
     # - ipykernel
     #- npm
