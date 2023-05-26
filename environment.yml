@@ -5,19 +5,19 @@ channels:
     - astra-toolbox
     - ccpi
 dependencies:
-    - python=3.10
-    - ipython
-    - ipykernel
+    - python=3.11
+    # - ipython
+    # - ipykernel
     #- npm
-    - nodejs
+    # - nodejs
     - ipympl
-    - traittypes=0.2.1
-    - numpy=1.21
-    - pandas
-    - libtiff
-    - vtk
-    - jupyterlab>=3
-    - ipywidgets>=7.6
+    # - traittypes=0.2.1
+    # - numpy=1.24
+    # - pandas
+    # - libtiff
+    # - vtk
+    # - jupyterlab>=3
+    # - ipywidgets>=7.6
 #    - cma
 #    - tomopy
 #- scikit-learn
@@ -27,7 +27,7 @@ dependencies:
     - SimpleITK
       #- numpy-stl
     - gputil
-    - python-kaleido
+    # - python-kaleido
       #- plotly
     - matplotlib
     - py-cpuinfo
@@ -46,4 +46,4 @@ dependencies:
         - gvxr
           #- opencv-python
           #- unlzw3
-        - npm
+        # - npm
