@@ -2,6 +2,40 @@
 
 ![gVXR](img/gvxr_logo.png)
 
+# Installation
+
+
+1. Get the code fromthe git repository with:
+```bash
+git clone https://github.com/effepivi/gvxr-tutorials.git
+```
+2. Install Mamba. Visit [https://mamba.readthedocs.io/en/latest/micromamba-installation.html](https://mamba.readthedocs.io/en/latest/micromamba-installation.html) for guidance.
+3. Create the Conda environment with:
+```bash
+mamba env create -f environment.yml
+```
+4. Activate the environment using:
+```bash
+conda activate gvxr-tutorials
+```
+5. Launch Jupyter lab with:
+```bash
+jupyter lab
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Tutorials
 
 Series of tutorials to show how to use gVXR
