@@ -27,7 +27,8 @@
         "GifPath": "visualisation.gif",
         "IncludeFinalAngle": true,
         "NumberOfProjections": 600,
-        "FlatFieldImages": 25,
+        "Flat-Field Correction": true,
+        "NumberOfWhiteImages": 25,
         "OutFolder": "../Noise-CBCT/raw_projections"
     },
 
